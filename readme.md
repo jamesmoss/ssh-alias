@@ -5,8 +5,8 @@ A ruby script which makes it easy to add, delete and list the ssh aliases in `~/
 Installation is simple:
 
     $ git clone https://github.com/jamesmoss/ssh-alias.git
-    $ cd ssh-host-aliases
-    $ chmod +x .
+    $ cd ssh-alias
+    $ chmod -r +x .
 
 To add a host run `./new-ssh-alias.rb` and follow the prompts. The script also takes care of transferring your public key to the server so you won't have to re-enter your password every time you connect.
 
