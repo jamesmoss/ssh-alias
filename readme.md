@@ -4,7 +4,7 @@ A ruby script which makes it easy to add, delete and list the ssh aliases in `~/
 
 Installation is simple:
 
-    $ git clone git://github.com/jamesmoss/ssh-host-aliases.git
+    $ git clone https://github.com/jamesmoss/ssh-alias.git
     $ cd ssh-host-aliases
     $ chmod +x .
 
