@@ -16,9 +16,11 @@ unless File.read(config_path).include?('host '+shortname+"\n")
   exit;
 end
 
-File.open(config_path, 'r+') do |file|
-  pattern = Regexp.escape(shortname)
-  file.puts file.read.gsub(/^host #{pattern}\n( .+?\n)+\n/i, '')
+pattern = Regexp.escape(shortname)
+newContent = File.read(config_path).gsub(/^host #{pattern}\n( .+?\n)+\n/i, '')
+
+File.open(config_path, 'w') do |out|
+  out << newContent
 end
 
 puts "Alias `#{shortname}` removed."
