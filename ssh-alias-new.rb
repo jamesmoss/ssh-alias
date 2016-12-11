@@ -49,7 +49,7 @@ File.open(config_path, 'a') do |file|
   file.puts " hostname #{hostname}"
   file.puts " port #{port}"
   file.puts " user #{user}"
-  if newKey
+  if newKey == 'y' || newKey == 'yes'
   	file.puts " IdentityFile ~/.ssh/id_rsa_#{shortname}"
   end
   file.puts ""
